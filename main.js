@@ -31,12 +31,23 @@
 const obj = {
     firstName : "Adarsh",
     lastName : "Singh",
+    ammar : () => {
+        console.log("I'm ammar")
+    },
+    address : {
+        home : "Bagdona",
+        dreamHome: "Pune",
+    }
+
 }
 
 
 obj.number = 8308416026
+Object.freeze(obj)
 obj.firstName = "Bittu"
 
 console.log(`My name is ${obj.firstName} ${obj.lastName} and you can contact me on ${obj.number}`)
 
-console.log(obj)
+console.log(obj.ammar())
+
+console.log(obj.address.dreamHome)

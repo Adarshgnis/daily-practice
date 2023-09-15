@@ -41,8 +41,11 @@ const obj = {
 
 }
 const obj2 = {
-    1 : "a",
-    2 : "b"
+    one : "a",
+    2 : "b",
+    three : function() {
+        console.log(`I am ${this.one}`)
+    }
 }
 
 const obj3 = { ...obj2, ...obj}
@@ -54,7 +57,7 @@ obj.firstName = "Bittu"
 
 console.log(`My name is ${obj.firstName} ${obj.lastName} and you can contact me on ${obj.number}`)
 
-console.log(obj.ammar())
+console.log(obj2.three())
 
 console.log(obj.address.dreamHome)
 

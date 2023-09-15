@@ -40,6 +40,12 @@ const obj = {
     }
 
 }
+const obj2 = {
+    1 : "a",
+    2 : "b"
+}
+
+const obj3 = { ...obj2, ...obj}
 
 
 obj.number = 8308416026
@@ -51,3 +57,5 @@ console.log(`My name is ${obj.firstName} ${obj.lastName} and you can contact me 
 console.log(obj.ammar())
 
 console.log(obj.address.dreamHome)
+
+console.log(obj3)
